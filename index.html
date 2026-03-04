@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <title>Simple Web Layout Project</title>
+</head>
+
+<body>
+    <header id="navbar"></header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__content">
+                <h1 class="hero__title">Simple Web Layout</h1>
+                <p class="hero__description">
+                    This site is an example of what a simple portfolio website for a one-person company looks like,
+                    it has three main sections:
+                    <strong>About</strong>, <strong>Services</strong> and <strong>Contact</strong>.
+                    These are the most common sections in a simple website, but they can be customized to fit specific
+                    user needs.
+                </p>
+                <div class="hero__actions">
+                    <a class="button btn-more">Learn More</a>
+                    <a href="contact.html" class="button btn-contact">Contact</a>
+                </div>
+            </div>
+            <img class="hero__img" src="assets/img/background-home.png" alt="Professional team working">
+        </section>
+    </main>
+
+    <section class="about-preview">
+        <h2 class="about-preview__title titles">About</h2>
+        <p class="about-preview__description">
+            This section provides a brief overview of the main content in the <em>About</em> page.
+            As this is a placeholder, all information can be adapted to match the user's preferences.
+        </p>
+        <div class="about-preview__images">
+            <img src="assets/img/about-1.jpg" alt="Team meeting in modern office">
+            <img src="assets/img/about-2.jpg" alt="Business team collaborating">
+        </div>
+    </section>
+
+    <section class="services-preview">
+        <h2 class="services-preview__title titles">Services</h2>
+        <div class="carousel__content">
+            <button class="carousel__btn carousel__btn--prev">&#10094;</button>
+
+            <div class="services-preview__carousel">
+                <div class="carousel__track">
+                    <div class="service-card">
+                        <h3 class="service-card__title">Web Development</h3>
+                        <p class="service-card__description">
+                            Modern, responsive and optimized websites tailored to your business needs.
+                        </p>
+                        <div class="service-card__actions">
+                            <a href="#" class="service-card__btn">Learn More</a>
+                            <div class="service-card__icon">💻</div>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <h3 class="service-card__title">UX/UI Design</h3>
+                        <p class="service-card__description">
+                            Creating intuitive and visually stunning interfaces that enhance user engagement and
+                            satisfaction.
+                        </p>
+                        <div class="service-card__actions">
+                            <a href="#" class="service-card__btn">Learn More</a>
+                            <div class="service-card__icon">🎨</div>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <h3 class="service-card__title">Branding Identity</h3>
+                        <p class="service-card__description">
+                            Developing unique brand voices and visual identities that make your business stand out from
+                            the crowd.
+                        </p>
+                        <div class="service-card__actions">
+                            <a href="#" class="service-card__btn">Learn More</a>
+                            <div class="service-card__icon">✨</div>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <h3 class="service-card__title">SEO Optimization</h3>
+                        <p class="service-card__description">
+                            Boosting your website's visibility on search engines to drive organic traffic and grow your
+                            audience.
+                        </p>
+                        <div class="service-card__actions">
+                            <a href="#" class="service-card__btn">Learn More</a>
+                            <div class="service-card__icon">📈</div>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <h3 class="service-card__title">Content Strategy</h3>
+                        <p class="service-card__description">
+                            Crafting compelling stories and professional copy that resonate with your target audience.
+                        </p>
+                        <div class="service-card__actions">
+                            <a href="#" class="service-card__btn">Learn More</a>
+                            <div class="service-card__icon">✍️</div>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <h3 class="service-card__title">Web Maintenance</h3>
+                        <p class="service-card__description">
+                            Ongoing support, security updates, and performance monitoring to keep your site running
+                            smoothly.
+                        </p>
+                        <div class="service-card__actions">
+                            <a href="#" class="service-card__btn">Learn More</a>
+                            <div class="service-card__icon">🛠️</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel__btn carousel__btn--next">&#10095;</button>
+        </div>
+    </section>
+
+    <section class="contact-preview">
+        <h2 class="contact-preview__title titles">Ready to work together?</h2>
+        <p class="contact-preview__text">
+            Let’s create something modern, functional and tailored to your needs.
+        </p>
+
+        <a href="contact.html" class="contact-preview__btn">
+            Get in touch
+        </a>
+    </section>
+
+    <script type="module" src="./assets/js/main.js"></script>
+</body>
+
+</html>

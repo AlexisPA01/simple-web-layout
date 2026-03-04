@@ -1,0 +1,25 @@
+{
+  "name": "simple-web-layout",
+  "version": "1.0.0",
+  "description": "Simple HTML/CSS/JS project to display a possible static site",
+  "keywords": [
+    "Static",
+    "Site"
+  ],
+  "license": "ISC",
+  "author": "AlexisPA01",
+  "type": "commonjs",
+  "scripts": {
+    "start": "parcel *.html",
+    "build": "parcel build *.html"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.4",
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "core-js": "^3.48.0",
+    "fracty": "^1.0.12",
+    "regenerator-runtime": "^0.14.1"
+  }
+}
