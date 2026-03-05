@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/contact.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <title>Contact us</title>
+</head>
+
+<body>
+    <header id="navbar"></header>
+
+    <main class="contact">
+        <section class="contact__container">
+
+            <article class="contact__form">
+                <header class="contact__header">
+                    <h2 class="contact__title">Start Your Project Today</h2>
+                    <p class="contact__subtitle">
+                        Tell us about your needs and how to reach you.
+                    </p>
+                </header>
+
+                <form method="POST" class="contact-form">
+                    <div class="contact-form__row">
+                        <div class="contact-form__field">
+                            <label for="first-name">First Name *</label>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </div>
+
+                        <div class="contact-form__field">
+                            <label for="last-name">Last Name *</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                    </div>
+
+                    <div class="contact-form__field">
+                        <label for="email">Your Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="contact-form__field">
+                        <label for="phone">Your Phone *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="contact-form__field">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+
+                    <div class="contact-form__field">
+                        <label for="interest">Interested In</label>
+                        <select id="interest" name="interest">
+                            <option value="" disabled selected>Please select</option>
+                            <option value="design">Design</option>
+                            <option value="development">Development</option>
+                            <option value="consulting">Consulting</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="contact-form__button">
+                        Send Message
+                    </button>
+
+                    <p class="contact-form__disclaimer">
+                        <small>
+                            *This contact section is fully customizable and can be connected
+                            to email services, CRM systems, or backend processing.
+                        </small>
+                    </p>
+                </form>
+            </article>
+
+            <aside class="contact__info">
+                <h3 class="contact__info-title">Get In Touch</h3>
+
+                <address class="contact-info">
+                    <div class="contact-info__item">
+                        <i class="ri-mail-fill"></i>
+                        <strong>Email:</strong>
+                        <a href="mailto:support@example.com">support@example.com</a>
+                    </div>
+
+                    <div class="contact-info__item">
+                        <i class="ri-phone-fill"></i>
+                        <strong>Phone:</strong>
+                        <a href="tel:+11234567890">(123) 456-7890</a>
+                    </div>
+
+                    <div class="contact-info__item">
+                        <i class="ri-map-pin-2-fill"></i>
+                        <strong>Address:</strong>
+                        123 Example St, Somewhere, ST 12345
+                    </div>
+
+                    <div class="contact-info__item">
+                        <i class="ri-time-fill"></i>
+                        <strong>Business Hours:</strong>
+                        <time datetime="Mo-Fr 09:00-17:00">
+                            Monday to Friday: 9:00 AM – 5:00 PM
+                        </time>
+                    </div>
+                </address>
+
+                <p class="contact__info-description">
+                    Easily edit this section with your own business email,
+                    phone number, address, and hours to provide clear
+                    contact information for your vi-sitors.
+                </p>
+            </aside>
+
+        </section>
+    </main>
+
+    <script type="module" src="./assets/js/contact.js"></script>
+</body>
+
+</html>
