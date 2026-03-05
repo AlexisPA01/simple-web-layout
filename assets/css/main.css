@@ -221,8 +221,6 @@
     padding: 16px 0;
 }
 
-.contact-preview__title {}
-
 .contact-preview__title::after {
     content: "";
     display: block;
@@ -231,8 +229,6 @@
     background: var(--accent-color);
     margin: 0.5rem auto 0;
 }
-
-.contact-preview__text {}
 
 .contact-preview__btn {
     display: inline-block;

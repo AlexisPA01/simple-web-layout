@@ -182,6 +182,7 @@
 
 .contact-info__item a {
     margin-left: 8px;
+    color: var(--text-color);
 }
 
 .contact__info-description {

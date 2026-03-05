@@ -1,0 +1,128 @@
+body {
+    background-color: var(--secondary-bg);
+}
+
+.services {
+    width: 100%;
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.services-hero {
+    text-align: center;
+}
+
+.services-hero__label {
+    font-size: 1.1rem;
+    color: var(--accent-color);
+    border-bottom: 2px var(--accent-color) solid;
+}
+
+.services-hero__title {
+    font-size: 2.5rem;
+    margin-top: 12px;
+}
+
+.services-hero__description {
+    width: 75%;
+    font-size: 1.2rem;
+    margin: 12px auto;
+    color: var(--secondary-text);
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    width: 75%;
+    margin: 24px 0;
+}
+
+.service-card {
+    background-color: var(--bg-color);
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+}
+
+.service-card__icon {
+    font-size: 2rem;
+}
+
+.service-card__title {
+    font-size: 1.5rem;
+}
+
+.service-card__description {
+    width: 75%;
+    color: var(--secondary-text);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.service-card__btn {
+    padding: 12px 16px;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    background-color: var(--primary-color);
+    color: var(--surface-color);
+    margin: 12px 0;
+}
+
+.services-info {
+    width: 75%;
+    text-align: left;
+    background: linear-gradient(90deg, var(--bg-color) 75%, var(--gradient-blue-gray));
+    padding: 16px;
+    border-radius: 16px;
+    margin-bottom: 8px;
+}
+
+.services-info__title {
+    font-size: 1.5rem;
+}
+
+.services-info__description {
+    font-size: 1.1rem;
+    margin: 6px 0;
+}
+
+.services-cta {
+    width: 75%;
+    text-align: right;
+    background: linear-gradient(270deg, var(--bg-color) 75%, var(--gradient-blue-gray));
+    padding: 16px;
+    border-radius: 16px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.services-cta__title {
+    font-size: 1.5rem;
+}
+
+.services-cta__description {
+    font-size: 1.1rem;
+    margin: 6px 0;
+}
+
+.services-cta__btn {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: 100;
+    background-color: var(--primary-color);
+    color: var(--surface-color);
+}
