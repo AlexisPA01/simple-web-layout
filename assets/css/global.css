@@ -2,14 +2,36 @@
     --bg-color: #f8fafc;
     --secondary-bg: #e2e8f0;
     --surface-color: #ffffff;
+
     --primary-color: #1e3a8a;
     --accent-color: #2563eb;
+
     --text-color: #0f172a;
     --secondary-text: #334155;
     --muted-text: #64748b;
+
     --border-color: #e2e8f0;
     --secondary-border: #3b82f6;
+
     --gradient-blue-gray: #f1f5f9;
+}
+
+.dark {
+    --bg-color: #020617;
+    --secondary-bg: #0f172a;
+    --surface-color: #1e293b;
+
+    --primary-color: #3b82f6;
+    --accent-color: #60a5fa;
+
+    --text-color: #f8fafc;
+    --secondary-text: #cbd5f5;
+    --muted-text: #94a3b8;
+
+    --border-color: #1e293b;
+    --secondary-border: #3b82f6;
+
+    --gradient-blue-gray: #0f172a;
 }
 
 * {
@@ -17,6 +39,10 @@
     padding: 0;
     margin: 0;
     font-family: 'Inter', sans-serif;
+    transition:
+        background-color .3s ease,
+        color .3s ease,
+        border-color .3s ease;
 }
 
 a {
@@ -31,25 +57,44 @@ button {
     cursor: pointer;
 }
 
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
 .navbar {
-    background-color: var(--surface-color);
+    background-color: var(--gradient-blue-gray);
     border-bottom: 1px solid var(--border-color);
     display: flex;
     padding: 12px 24px;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
     width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(6px);
 }
 
 .navbar-logo {
     display: flex;
     align-items: center;
+    color: var(--text-color);
 }
 
 .navbar-logo__img {
     width: 48px;
     margin-right: 12px;
+}
+
+#theme-toggle {
+    border: 1px var(--secondary-border) solid;
+    background-color: var(--bg-color);
+    margin-left: 16px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    padding: 6px;
 }
 
 .navbar-menu {
@@ -93,4 +138,16 @@ button {
 .navbar-link:active,
 .navbar-link:hover {
     color: var(--accent-color);
+}
+
+@media (max-width:768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .navbar-menu {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
 }
