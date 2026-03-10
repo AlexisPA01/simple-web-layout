@@ -85,3 +85,22 @@ body {
         margin-top: 20px;
     }
 }
+
+@media (max-width:530px) {
+    .about__title {
+        font-size: 1.9rem;
+    }
+
+    .about__description,
+    .about-approach__description {
+        font-size: 1.1rem;
+    }
+
+    .about-approach__content {
+        padding: 20px;
+    }
+
+    .about-approach__title {
+        font-size: 1.8rem;
+    }
+}

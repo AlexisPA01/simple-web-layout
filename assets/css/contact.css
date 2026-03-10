@@ -229,3 +229,46 @@
         margin-left: 0;
     }
 }
+
+@media (max-width:530px) {
+    .container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .contact__title,
+    .contact__info-title {
+        font-size: 1.8rem;
+    }
+
+    .contact__subtitle {
+        font-size: 1.05rem;
+    }
+
+    .contact-form__field label,
+    .contact-form__field select,
+    .contact__info-description,
+    .contact-form__button {
+        font-size: 1rem;
+    }
+
+    .contact-form__disclaimer {
+        font-size: 1.1rem;
+    }
+
+    .contact__form {
+        padding: 1.2rem;
+    }
+
+    .contact__info {
+        word-break: break-all;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-info__item {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+    }
+}
