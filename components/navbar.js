@@ -16,9 +16,13 @@ export const navbar = `
 
 export function initNavbar() {
     const btn = document.getElementById("theme-toggle");
+    const img = document.querySelector(".navbar-logo__img");
 
     function updateIcon() {
         btn.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
+        img.src = document.body.classList.contains("dark") ?
+            new URL('../assets/img/home-white.png', import.meta.url) :
+            new URL('../assets/img/home.png', import.meta.url);
     }
 
     const savedTheme = localStorage.getItem("theme");
